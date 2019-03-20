@@ -1,6 +1,6 @@
-function takeANumber(katzDeliLine,name){
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+function takeANumber(katzDeliLine,Name){
+  katzDeliLine.push(Name);
+  return `Welcome, ${Name}. You are number ${katzDeliLine.length} in line.`;
 }
 
 function nowServing(katzDeliLine){
@@ -8,17 +8,27 @@ function nowServing(katzDeliLine){
   else return "There is nobody waiting to be served!";
 }
 
+
+
 function currentLine(katzDeliLine){
   var str = `The line is currently: `;
-  var newLine = [];
+  var katzTwo = [];
   if (katzDeliLine.length === 0) return "The line is currently empty.";
   else{
     for (let i = 0; i < katzDeliLine.length; i++){
-        newLine[i] = `${[i+1]}. ${katzDeliLine[i]}`;
+        katzTwo[i] = `${[i+1]}. ${katzDeliLine[i]}`;
       }
-    str += newLine.join(', ')
+    str += katzTwo.join(', ')
     return str;
   }
 }
 
 
+// so only add numbers
+
+var number=1
+
+function takeAnumberTwo(katzDeliLine){
+  katzDeliLine.push(number)
+  return number++
+}
