@@ -24,11 +24,3 @@ function currentLine(katzDeliLine){
 }
 
 
-// so only add numbers
-
-var number=1
-
-function takeAnumberTwo(katzDeliLine){
-  katzDeliLine.push(number)
-  return number++
-}
